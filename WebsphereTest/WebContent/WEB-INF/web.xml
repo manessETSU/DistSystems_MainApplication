@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name>WebsphereTest</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>  
+          <servlet-name>insert Data</servlet-name>  
+          <servlet-class>mvc.ControllerServlet</servlet-class>  
+    </servlet>   
+    <servlet-mapping>  
+        <servlet-name>insert Data</servlet-name>  
+        <url-pattern>/insertData</url-pattern>  
+    </servlet-mapping> 
+    <servlet>  
+          <servlet-name>edit Data</servlet-name>  
+          <servlet-class>mvc.EditRecord</servlet-class>  
+    </servlet>   
+    <servlet-mapping>  
+        <servlet-name>edit Data</servlet-name>  
+        <url-pattern>/editData</url-pattern>  
+    </servlet-mapping> 
+    <servlet>  
+          <servlet-name>update Data</servlet-name>  
+          <servlet-class>mvc.UpdateRecord</servlet-class>  
+    </servlet>   
+    <servlet-mapping>  
+        <servlet-name>update Data</servlet-name>  
+        <url-pattern>/updateData</url-pattern>  
+    </servlet-mapping> 
+    
+     <servlet>  
+          <servlet-name>delete Data</servlet-name>  
+          <servlet-class>mvc.DeleteRecord</servlet-class>  
+    </servlet>   
+    <servlet-mapping>  
+        <servlet-name>delete Data</servlet-name>  
+        <url-pattern>/deleteData</url-pattern>  
+    </servlet-mapping> 
+</web-app>
